@@ -56,6 +56,14 @@
             background-color:#d5d0d069;
         }
 
+        .cestado{
+            background-color: aqua;
+        }
+
+        .cpopulação{
+            background-color: yellow;
+        }
+
     </style>
 </head>
 <body>
@@ -71,6 +79,15 @@
     -->
     <h1>Uso de tabelas grandes</h1>
     <table>
+        <colgroup>
+            <col class="cestado">
+            <col class="cpopulação">
+            <!--
+            Se eu quiser estilizar as duas colunas de vez é só utilizar  mesmo col para as duas e colocar um "span". 
+            EX:
+            <col class="cestado" span="2">
+            -->
+        </colgroup>
         <caption>População das unidades Federativas</caption>
         <thead>
             <tr>
