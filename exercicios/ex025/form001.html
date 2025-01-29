@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!--
+    Uso dos métodos:
+        O get é usado para envio de formulários mais simples com, no máximo, 3 mil Bytes. Ele também não envia arquivos. Ele acaba exibindo o coteúdo dos formulários na URL.
+        O post é o oposto do get. Ele envia formulários com arquivos, senhas, etc. Superior a 3 mil Bytes.
+    -->
+    <h1>Meu primeiro formulário</h1>
+    <form method="get" action="cadastro.php">
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome">
+        </p>
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+</body>
+</html>
