@@ -1,3 +1,84 @@
 @charset "UTF-8";
 
 /* TODAS AS DEMAIS MEDIAS */
+
+/*
+TYPICAL DEVICE BREAKPOINTS:
+---------------------------
+-Telas pequenas: - 600px
+-Celulares: 600px - 768px
+-Tablets: 768px - 992px
+-Desktp: 992px - 1200px
+Grandes telas: acima de 1200px
+*/
+
+@media print  {
+    body{
+        /*background-image: url(../imagens/back-print.jpg); desnecessário, pq na impressão não sai backgrpund.*/
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main{
+        border: 2px solid black;
+        width: 90vw;
+    }
+
+    main::after{
+        font-size: 16px;
+        content: 'Essa impressão foi feita através do site www.aindanaoesite.com.br';
+        text-decoration: overline;
+        text-align: center;
+    }
+
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+
+    #phone{display: none;}
+    #tablet{display: none;}
+    #print{display: block;}
+    #pc{display: none;}
+    #tv{display: none;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    #phone{display: none;}
+    #tablet{display: block;}
+    #print{display: none;}
+    #pc{display: none;}
+    #tv{display: none;}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    #phone{display: none;}
+    #tablet{display: none;}
+    #print{display: none;}
+    #pc{display: block;}
+    #tv{display: none;}
+}
+
+@media screen and (min-width: 1200px){
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main{
+        width: 700px;
+    }
+
+    #phone{display: none;}
+    #tablet{display: none;}
+    #print{display: none;}
+    #pc{display: none;}
+    #tv{display: block;}
+}
+
