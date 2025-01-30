@@ -5,3 +5,11 @@ function clicar(){
         itens.style.display = 'block'
     }
 }
+
+function mudouTam(){
+    if(window.innerWidth >= 600){
+        itens.style.display = 'flex'
+    }else{
+        itens.style.display = 'none'
+    }
+}

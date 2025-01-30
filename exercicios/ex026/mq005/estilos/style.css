@@ -54,7 +54,6 @@ menu{
 }
 
 header menu ul{
-    display: block;
     list-style-type: none;
     font-weight: 600;
     padding: 0px 0 5px 0;
