@@ -34,43 +34,65 @@ header h1{
     
 }
 
-header nav ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-    font-weight: 600;
-    padding: 30px 0 5px 0;
+#burguer{
+    display: block;
+    text-align: center;
+    background-color: var(--color1);
+    color: var(--color4);
+    margin-top: 30px;
+    border: 0.5px solid var(--color4);
 }
 
-header nav ul li{
-    margin-right: 20px;
+#burguer:hover{
+    background-color: var(--color2);
+    color: black;
+    cursor: pointer;
+}
+
+menu{
+    display: none;
+}
+
+header menu ul{
+    display: block;
+    list-style-type: none;
+    font-weight: 600;
+    padding: 0px 0 5px 0;
+}
+
+header menu ul a{
+    display: block;
+    width: 100vw;
     padding: 5px;
     background-color: var(--color4);
     text-align: center;
+    border: 1px solid var(--color5-1);
 }
 
-header nav ul li:hover{
-    box-shadow: 4px 4px 5px var(--color5);
-    cursor: pointer;
+header menu ul a{
+    text-decoration: none;
+    color: black;
+}
+
+header menu ul a:hover{
+    background-color: var(--color5-1);
 }
 
 main{
     background-color: var(--color4);
     margin: auto;
     margin-top: 10px;
-    max-width: 700px;
+    max-width: 90vw;
     border-radius: 10px;
     padding: 10px;
 }
 
-main h2{
+main article h2{
     text-align: center;
     padding: 10px;
 }
 
-main p{
+main article p{
     margin-top: 10px;
     text-align: justify;
 }
