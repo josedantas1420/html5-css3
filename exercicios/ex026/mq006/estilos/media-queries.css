@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 600px) and (max-width: 992px) {
+    .login{
+        width: 70vw;
+        height: 70vh;
+    }
+
+    .imagem{
+        display: block;
+        float: left;
+        width: 40%;
+        height: 100%;
+    
+    }
+
+    .formulario{
+        display: block;
+        float: right;
+        width: 60%;
+        height: 100%;        
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 100%;
+        margin-top: 8px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .login{
+        width: 70vw;
+        height: 50vh;
+    }
+
+    .imagem{
+        display: block;
+        float: left;
+        width: 50%;
+        height: 100%;
+    
+    }
+
+    .formulario{
+        display: block;
+        float: right;
+        width: 50%;
+        height: 100%;        
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 100%;
+        margin-top: 8px;
+    }
+    
+}
+
+@media screen and (min-width: 1200px) {
+    .login{
+        width: 70vw;
+        height: 50vh;
+    }
+
+    .imagem{
+        background-position: right center;
+        display: block;
+        float: right;
+        width: 50%;
+        height: 100%;
+    
+    }
+
+    .formulario{
+        display: block;
+        float: left;
+        width: 50%;
+        height: 100%;       
+    }
+
+    .formulario h1{
+        font-size: 1.7em;
+    }
+
+    .formulario p{
+        font-size: 1em;
+    }
+
+    .campo{
+        width: 100%;
+    }
+
+    .buttom{
+        width: 100%;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 100%;
+        margin-top: 8px;
+    }
+    
+}
