@@ -7,35 +7,27 @@
     <style>
         .container{
             display: flex;
-            flex-flow: row nowrap;
+            flex-direction: column;
             background-color: antiquewhite;
         }
 
         .item{
+            flex: auto;
             text-align: center;
             background-color: aquamarine;
             border: 1px solid black;
-            padding: 10px;
-        }
-
-        #a1{
-            flex: 0 2 50px;
-        }
-
-        #a2{
-            flex: 1 1 150px;
-        }
-
-        #a3{
-            flex: 2 0 200px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="item" id="a1">A</div>
-        <div class="item" id="a2">B</div>
-        <div class="item" id="a3">C</div>
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
     </div>
 </body>
 </html>
